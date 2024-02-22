@@ -1,0 +1,142 @@
+.men-container{
+    margin-top: 50px;
+}
+.men-container h1{
+    text-align: center;
+    color: rgb(26, 26, 26);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.men-container h4{
+    text-align: center;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.men-two-pic{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.one-pic{
+    width: 70%;
+    height: 300px;
+}
+.two-pic{
+    width: 25%;
+    height: 300px;
+}
+.one-pic img{
+    width:100%;
+    height: 100%;
+    
+}
+.two-pic img{
+    width: 100%;
+    height: 100%;
+} 
+.men-two-text{
+    display: flex;
+    justify-content: space-between;
+}
+.text-two{
+    padding: 10px;
+    text-align: justify;
+}
+.men-link{
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px;
+}
+.men-link:hover{
+    color:#ABA944;
+}
+.men-pic-div{
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+}
+.men-pic-land{
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+}
+.men-three-pic{
+    display: flex;
+    height: 400px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.men-pics{
+    width: 100%;
+    height: 100%;
+}
+.women-two-pic{
+    width: 100%;
+}
+.one-pic-women{
+width: 100%;
+}
+.one-pic-women img{
+    width: 100%;
+}
+.women-pic-div{
+    width: 20%;
+}
+.women-four-pic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px) {
+.men-two-pic{
+    display: block;
+   
+}    
+.men-three-pic{
+    display: block;
+}
+.men-container h1{
+    text-align: center;
+    color: rgb(26, 26, 26);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.men-container h4{
+    text-align: center;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+}
+.men-link{
+    color: black;
+    font-size: 7px;
+    font-weight: bolder;
+    padding: 10px;
+}
+.text-two h5{
+font-size: 7px;
+}
+.men-pic-div{
+    width: 100%;
+}
+.men-pic-land{
+    width: 100%;
+}
+}

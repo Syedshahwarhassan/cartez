@@ -1,0 +1,129 @@
+.mini-card:hover{
+box-shadow: 0px 0px 2px 2px lightgray;
+}
+
+.detail-container{
+    display: flex;
+}
+.detail_featured-img{
+    height:100%;
+    width: 100%;
+}
+.detail-img-div{
+    border: 2px solid lightgray;
+    padding: 15px;
+    margin: 10px;
+    width: 40%;
+    height: fit-content;
+}
+.dis{
+    padding: 5px;
+    background-color: #ABA944;
+    margin-top: 10px;
+    width: fit-content;
+    padding-right: 10px;
+    padding-left: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+}
+.color{
+    padding: 5px;
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+   
+}
+.color p{
+    margin: 0px;
+}
+.brand{
+    color: black;
+    font-size: 15px;
+}
+.size-list{
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cardbody{
+    width: 60%;
+}
+.size-list p{
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    margin:auto 10px ;
+}
+.detail-btn{
+    width: 100%;
+  
+}
+.addtocart{
+    height: fit-content;
+   margin: 10px 10%;
+    width: 300px;
+    padding: 10px;
+    background-color: transparent;
+border: 1px solid #ABA944;
+}
+.buynow{
+    height: fit-content;
+    margin: 5px 10%;
+     width: 300px;
+     padding: 10px;
+     background-color: #ABA944;
+     border: 0px;
+}
+.addtocart:hover{
+   box-shadow: 5px 5px 10px #ABA944;
+}
+.buynow:hover{
+    box-shadow: 5px 5px 10px #ABA944;
+}
+.des-container{
+ margin: 20px 0px;
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1100px){
+    .title{
+        font-size: larger;
+    }
+    
+}
+@media only screen and (max-width:700px){
+   .detail-container{
+    display: block;
+   }
+   .detail-img-div{
+    width: 90%;
+    height: 500px;
+   }
+   .cardbody{
+    width: 90%;
+   }
+}
+@media only screen and (max-width:580px) {
+    .addtocart{
+        width: 200px;
+    }
+    .buynow{
+        width: 200px;
+    }
+    .des-container{
+        width: 200px;
+    }
+    .detail-img-div{
+        height: 350px;
+    }
+}
