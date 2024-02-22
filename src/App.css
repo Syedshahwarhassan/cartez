@@ -2,7 +2,7 @@
 box-shadow: 0px 0px 2px 2px lightgray;
 }
 
-.detail-container{
+.card-data{
     display: flex;
 }
 .detail_featured-img{
@@ -14,7 +14,7 @@ box-shadow: 0px 0px 2px 2px lightgray;
     padding: 15px;
     margin: 10px;
     width: 40%;
-    height: fit-content;
+    height: 500px;
 }
 .dis{
     padding: 5px;
@@ -85,8 +85,39 @@ border: 1px solid #ABA944;
  margin: 20px 0px;
     width: 400px;
 }
-
-
+.onfire{
+    display: flex;
+    justify-content: right;
+}
+.review{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.star-review h5{
+    color: lightgray;
+}
+.line{
+height: 70%;
+width: 2px;
+border: 1px solid lightgray;
+margin: 0px 20px;
+}
+.review-btn{
+    height: fit-content;
+    width: 300px;
+    margin: 20px;
+    padding: 7px;
+    background-color: #ABA944;
+    border: 0px;
+    color: white;
+}
+.review-btn:hover{
+    box-shadow: 5px 5px 10px lightgray;
+}
 
 
 
