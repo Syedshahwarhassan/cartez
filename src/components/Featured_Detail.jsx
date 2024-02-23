@@ -4,10 +4,14 @@ import { useParams } from "react-router-dom"
 import { mens_kurta } from "../api/men_kurta";
 import "../App.css"
 import Review from "./review/Review";
+import { useDispatch } from "react-redux";
+import { addTocart } from "../featured/cartSlice";
 
 const Featured_Detail = () => {
-
-
+const dispatch=useDispatch();
+function add(x){
+dispatch(addTocart(x));
+}
 
 
     const {id}=useParams();
@@ -63,7 +67,7 @@ const Featured_Detail = () => {
 </div>
 <h6>{x.topLavelCategory}/{x.secondLavelCategory}/{x.thirdLavelCategory}</h6>
 <div className="detail-btn">
-<button className="addtocart" >Add to Cart</button><br/>
+<button className="addtocart" onClick={()=>add(x)} >Add to Cart</button><br/>
 <button className="buynow">Buy Now</button>
 </div>
 
