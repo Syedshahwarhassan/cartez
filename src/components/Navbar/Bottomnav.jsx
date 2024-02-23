@@ -43,6 +43,19 @@ const Bottomnav = () => {
  <i className="fa-solid fa-magnifying-glass" />
 
      </div>
+          <div className="nav-search text-center"  >
+          <Link to={"/cart"}><button type="button" className="btn  position-relative">
+          Cart
+         
+          <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            {
+              localStorage.getItem("qty")
+            }
+            <span className="visually-hidden"></span>
+          </span>
+        </button>
+        </Link>
+     </div>
     </div>
   </div>
   <div className="search-nav" id="search-nav">

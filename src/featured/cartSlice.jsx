@@ -22,6 +22,9 @@ if(item>=0)
      
 
       localStorage.setItem("cart",JSON.stringify(state.cart,state.TotalQuantity,state.TotalAmount))
+      localStorage.setItem("qty",JSON.stringify(state.TotalQuantity))
+      localStorage.setItem("price",JSON.stringify(state.TotalAmount))
+    
     },
   },
 });

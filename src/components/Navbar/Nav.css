@@ -4,6 +4,12 @@
     display: flex;
     padding:10px 40px;
 }
+.topnav-container2 {
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    padding:10px 40px;
+}
 .topnav-icon{
     display: flex;
 }
