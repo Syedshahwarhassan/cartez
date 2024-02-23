@@ -118,10 +118,49 @@ margin: 0px 20px;
 .review-btn:hover{
     box-shadow: 5px 5px 10px lightgray;
 }
+ 
+ #write-review{
+text-align: center;
+ }
+.review-title , .review-text , .review-name{
+color: black;
 
+margin-top: 10px;
+width: 100%;
+}
+.review-title input ,.review-name input {
+    border: 1px solid lightgray;
+    padding: 5px;
+    width: 50%;
+    outline: lightgray;
+}
+.review-text input {
+    border: 1px solid lightgray;
+    padding: 5px;
+   
+    outline: lightgray;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: rgb(226, 224, 224);
+    margin: 10px;
+position:relative;
+    height: fit-content;
+}
+.cover{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color:white;
+left:0%;
+top:0%;
+}
 
-
-
+.data{
+    display: flex;
+}
 
 
 
