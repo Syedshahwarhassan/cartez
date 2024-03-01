@@ -32,7 +32,7 @@ const Bottomnav = () => {
             <li><Link className="dropdown-item" to={"/product"}>Men Kurta</Link></li>
             <li><a className="dropdown-item" href="#">Another action</a></li>
             <li><hr className="dropdown-divider" /></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><Link className="dropdown-item" to={""}>Electronics</Link></li>
           </ul>
         </li>
         <li className="nav-item">
@@ -49,7 +49,8 @@ const Bottomnav = () => {
          
           <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
             {
-              localStorage.getItem("qty")
+              
+              localStorage.getItem("qty")?localStorage.getItem("qty"):0
             }
             <span className="visually-hidden"></span>
           </span>

@@ -8,7 +8,9 @@ import Featured_Product from "./components/Featured_Product"
 import Featured_Detail from "./components/Featured_Detail"
 import Write_review from "./components/review/Write_review"
 import { ToastContainer } from "react-toastify"
-import Cart from "./featured/Cart"
+import { Cart } from "./featured/Cart"
+import { Footer } from "./components/footer/Footer"
+
 
 const App = () => {
   return (
@@ -25,7 +27,7 @@ const App = () => {
 </Route>
 <Route path="/cart" element={<Cart/>}></Route>
 </Routes>
-
+<Footer/>
     </div>
     
   )

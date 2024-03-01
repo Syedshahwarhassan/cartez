@@ -14,7 +14,7 @@ const Review = () => {
             <h2>☆☆☆☆☆</h2>
             <h5>Be the first to write a review</h5>
           </div>
-          <div className="line"></div>
+        
           <div className="review-btn-div">
             <Link to={"write"}>
               <button className="review-btn">Write a review</button>

@@ -21,9 +21,7 @@ const Write_review = () => {
           Review:
           <br />
           <textarea
-            rows={"5"}
-            required
-            cols={"100"}
+          
             placeholder="your Review here...."
             name="text"
           

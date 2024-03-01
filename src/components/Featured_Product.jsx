@@ -5,8 +5,8 @@ import { mens_kurta } from "../api/men_kurta"
 import "../App.css"
 const Featured_Product = () => {
   return (
-    <div>
-    <h1>{`Men's Kurta`}</h1>
+    <div className="product">
+    <h1 >{`Men's Kurta`}</h1>
     <div className="card-container d-flex flex-wrap justify-content-evenly">
      {mens_kurta.map((c)=>{
         return(

@@ -6,6 +6,7 @@ import "../App.css"
 import Review from "./review/Review";
 import { useDispatch } from "react-redux";
 import { addTocart } from "../featured/cartSlice";
+import Youlike from "./Youlike";
 
 const Featured_Detail = () => {
 const dispatch=useDispatch();
@@ -76,6 +77,7 @@ dispatch(addTocart(x));
 </div>
 
  <Review/>
+ <Youlike/>
     </div>
 
    

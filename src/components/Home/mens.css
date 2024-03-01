@@ -58,16 +58,16 @@
 .men-pic-div{
     width: 25%;
     height: 100%;
-    margin: 10px;
+    margin: 10px ;
 }
 .men-pic-land{
     width: 50%;
     height: 100%;
-    margin: 10px;
+    margin: 10px ;
 }
 .men-three-pic{
     display: flex;
-    height: 400px;
+    height: 100%;
     justify-content: space-evenly;
     width: 100%;
 }
@@ -109,6 +109,9 @@ width: 100%;
 }    
 .men-three-pic{
     display: block;
+}
+.men-pics{
+    margin: 10px 0px;
 }
 .men-container h1{
     text-align: center;

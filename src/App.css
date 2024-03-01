@@ -100,15 +100,10 @@ border: 1px solid #ABA944;
 .star-review h5{
     color: lightgray;
 }
-.line{
-height: 70%;
-width: 2px;
-border: 1px solid lightgray;
-margin: 0px 20px;
-}
+
 .review-btn{
     height: fit-content;
-    width: 300px;
+    width: 250px;
     margin: 20px;
     padding: 7px;
     background-color: #ABA944;
@@ -122,7 +117,7 @@ margin: 0px 20px;
  #write-review{
 text-align: center;
  }
-.review-title , .review-text , .review-name{
+.review-title , .review-name{
 color: black;
 
 margin-top: 10px;
@@ -157,13 +152,81 @@ position:relative;
 left:0%;
 top:0%;
 }
-
+.review-text{
+    width: 100%;
+}
+textarea{
+    height: 200px;
+    width: 70%;
+     
+ }
 .data{
     display: flex;
 }
 
+.product-container{
+    height: 500px;
+    overflow: hidden;
+
+}
+.product h1{
+   text-align: center;
+   font-size: 40px;
+   font-weight: 700;
+margin: 20px;
+}
+.you-like{
+    display: flex;
+    
+}
+.footer-div{
+    display: flex;
+    padding: 50px 0px;
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer-min{
+    width: 17%;
+    padding: 10px;
+    padding-left: 50px;
+}
+.footer-min h6{
+font-size: 20px;
+font-weight: 500;
+padding: 10px 0px;
 
 
+}
+.footer-min p{
+    text-align: justify;
+    font-weight: 500;
+}
+.footer-min p:hover{
+    color: #ABA944;
+}
+.footer-link{
+    color: black;
+    text-decoration: none;
+}
+.line{
+    width: 70%;
+    border: 2px solid lightgray;
+    height: 1px;
+    margin: auto;
+}
+.footer-icon{
+width: 100%;
+padding: 40px;
+text-align: center;
+}
+.footer-icon i{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: lightgray;
+}
 
 @media only screen and (max-width:1100px){
     .title{
@@ -182,9 +245,51 @@ top:0%;
    .cardbody{
     width: 90%;
    }
+   .review{
+    display: block;
+   }
+   .line{
+    display: none;
+   }
+   .title{
+    font-size: 15px;
+   }
+   .card-data{
+    display: block;
+}
+.review-title input ,.review-name input {
+  
+    width: 70%;
+  
+}
+.footer-div{
+    display: block;
+}
+textarea {
+   height: 100px;
+   width: 70%;
+    
+}
+.you-like{
+    display: block;
+}  
+.you-h1{
+    margin-top: 50px;
+}
+.footer-min{
+    width: 100%;
+}
 }
 @media only screen and (max-width:580px) {
-    .addtocart{
+    .product-container{
+        height: 450px;
+     
+        margin: 10px;
+    }
+    .product h1{
+        font-size: 15px;
+    }
+        .addtocart{
         width: 200px;
     }
     .buynow{
@@ -194,6 +299,6 @@ top:0%;
         width: 200px;
     }
     .detail-img-div{
-        height: 350px;
+        height: 300px;
     }
 }
