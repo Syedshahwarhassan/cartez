@@ -1,13 +1,14 @@
 import React from 'react'
 import { mens_kurta } from '../api/men_kurta';
 import { Link } from 'react-router-dom';
+import { shirt } from '../api/men_shirt';
 
 const Youlike = () => {
 let a=Math.floor(Math.random()*40)
 let b=Math.floor(Math.random()*40)
 let ca=Math.floor(Math.random()*40)
 let w=mens_kurta.find((c)=>c.id==a);
-let x=mens_kurta.find((c)=>c.id==b);
+let x=shirt.find((c)=>c.id==b);
 let y=mens_kurta.find((c)=>c.id==ca);
 
    

@@ -5,6 +5,7 @@ import Home_women from "./Home_women"
 
 import Slider from "./Slider"
 import Featured_Product from "../Featured_Product"
+import { Shirt } from "../Shirt"
 const Home = () => {
   return (
     <div>
@@ -13,9 +14,10 @@ const Home = () => {
    <Featured_Product/>
    </div>
 
-  <Home_women/>
   <Home_men/>
-
+  <div className="product-container">
+  <Shirt/>
+   </div>
 
  
     </div>

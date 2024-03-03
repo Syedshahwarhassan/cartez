@@ -30,9 +30,9 @@ const Bottomnav = () => {
           </a>
           <ul className="dropdown-menu">
             <li><Link className="dropdown-item" to={"/product"}>Men Kurta</Link></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
+            <li><Link className="dropdown-item" to={"/Shirts"} >Men Shirt</Link></li>
             <li><hr className="dropdown-divider" /></li>
-            <li><Link className="dropdown-item" to={""}>Electronics</Link></li>
+            <li><Link className="dropdown-item" to={"/New"}>New Arrivals</Link></li>
           </ul>
         </li>
         <li className="nav-item">
