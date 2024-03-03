@@ -12,7 +12,7 @@ export const Shirt = () => {
         return(
  
 
- <div className="mini-card mt-4 mb-3 " style={{width: '13rem'}}>
+ <div className="mini-card mt-4 mb-3 " >
  <Link to={`/Shirts/${c.id}`}>  <img src={c.imageUrl} className="card-img-top" alt="..." height={"250px"} /></Link>
   <div className="card-body">
     <h5 className="card-title">{c.title.slice(0,15)}...</h5>

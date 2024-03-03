@@ -6,6 +6,7 @@ import Home_women from "./Home_women"
 import Slider from "./Slider"
 import Featured_Product from "../Featured_Product"
 import { Shirt } from "../Shirt"
+import { NewApi } from "../NewApi"
 const Home = () => {
   return (
     <div>
@@ -18,7 +19,7 @@ const Home = () => {
   <div className="product-container">
   <Shirt/>
    </div>
-
+<NewApi/>
  
     </div>
   )
