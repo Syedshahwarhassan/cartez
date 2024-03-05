@@ -410,22 +410,6 @@ export const New=[
     },
   },
   
-  {
-    id: 81,
-    title: "Tesla AI BIke",
-    price: 234,
-    description: "New Bike ",
-    images: [
-      "https://i.imgur.com/3oXNBst.jpeghttps://i.imgur.com/ErYYZnT.jpeghttps://i.imgur.com/boBPwYW.jpeg",
-    ],
-    creationAt: "2024-03-03T11:12:11.000Z",
-    updatedAt: "2024-03-03T11:15:51.000Z",
-    category: {
-      id: 1,
-      name: "Clothes",
-      image: "https://i.imgur.com/QkIa5tT.jpeg",
-      creationAt: "2024-03-02T17:12:25.000Z",
-      updatedAt: "2024-03-02T17:12:25.000Z",
-    },
-  }
+
+  
 ];

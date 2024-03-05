@@ -33,10 +33,11 @@ const Bottomnav = () => {
             <li><Link className="dropdown-item" to={"/Shirts"} >Men Shirt</Link></li>
             <li><hr className="dropdown-divider" /></li>
             <li><Link className="dropdown-item" to={"/New"}>New Arrivals</Link></li>
+            <li><Link className="dropdown-item" to={"/electric"}>Electric</Link></li>
           </ul>
         </li>
         <li className="nav-item">
-        <Link className="nav-link" href="#">Contact</Link>
+        <Link className="nav-link" to={"/contact"}>Contact</Link>
       </li>
       </ul>
      <div className="nav-search text-center" onClick={()=>showSearchBar()} >
@@ -56,6 +57,10 @@ const Bottomnav = () => {
           </span>
         </button>
         </Link>
+     </div>
+     <div>
+<Link to={'/login'}><i className="fa-solid fa-user fa-xl m-2" style={{color: '#000000'}} /></Link>
+
      </div>
     </div>
   </div>

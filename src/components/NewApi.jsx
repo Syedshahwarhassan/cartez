@@ -16,7 +16,7 @@ export const NewApi = () => {
     <h5 className="card-title">{c.title.slice(0,15)}...</h5>
     <p className="card-text">{c.description.slice(0,30)}...</p>
     
-    <p>  {c.price}$</p>
+    <p>Price:  {c.price}$</p>
 
   </div>
 </div>

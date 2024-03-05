@@ -6,21 +6,22 @@ export const Footer = () => {
 <div className="main-footer" >
         <div className="footer-div">
       <div className="footer-min"> 
-      <img src="/logo-no-background.png" height={"30px"} width={"150px"} style={{marginTop:"50px"}}/>
+      <Link to={"/"}>      <img src="/logo-no-background.png" height={"30px"} width={"150px"} style={{marginTop:"50px"}}/>
+</Link>
       </div>
       <div className="footer-min"> 
       <h6>Company</h6>
- <Link className="footer-link"><p>Privacy Policy</p></Link>
-      <Link className="footer-link"><p>Track Order</p></Link>
-      <Link className="footer-link"><p>Term & Conditions</p></Link>
-      <Link className="footer-link"><p>Blog</p></Link>
+ <Link className="footer-link" to={'/privacy'}><p>Privacy Policy</p></Link>
+      <Link className="footer-link" to={"/about"}><p>About Us</p></Link>
+      <Link className="footer-link" to={'/term'}><p>Term & Conditions</p></Link>
+
     
       </div>
       <div className="footer-min">
       <h6>Products</h6>
-      <Link className="footer-link"><p>Men Dress</p></Link>
-      <Link className="footer-link"><p>Women Dress</p></Link>
-      <Link className="footer-link"><p>Electronics</p></Link>
+      <Link className="footer-link"  to={'/product'}><p>Men Dress</p></Link>
+      <Link className="footer-link" to={'New'}><p>New Arrivals</p></Link>
+      <Link className="footer-link" to={'/electric'}><p>Electronics</p></Link>
       </div>
       <div className="footer-min"> 
       <h6>Contact Us</h6>

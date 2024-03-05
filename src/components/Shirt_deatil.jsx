@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { shirt } from '../api/men_shirt';
 import Review from './review/Review';
 import Youlike from './Youlike';
+import { Button } from './Button';
 
 export const Shirt_deatil = () => {
     const {id}=useParams();
@@ -56,10 +57,7 @@ export const Shirt_deatil = () => {
 })}
 </div>
 <h6>{x.topLavelCategory}/{x.secondLavelCategory}/{x.thirdLavelCategory}</h6>
-<div className="detail-btn">
-<button className="addtocart" onClick={()=>add(x)} >Add to Cart</button><br/>
-<button className="buynow">Buy Now</button>
-</div>
+<Button/>
 
 <div className="des-container"><h3>Description:</h3> <p className="des">{x.description}</p></div>
 </div>

@@ -14,6 +14,14 @@ import { Shirt } from "./components/Shirt"
 import { Shirt_deatil } from "./components/Shirt_deatil"
 import { NewApi } from "./components/NewApi"
 import NewApi_detail from "./components/NewApi_detail"
+import Privacy from "./components/footer/Privacy"
+import { About } from "./components/footer/About"
+import { Term } from "./components/footer/Term"
+import Electric from "./components/Electric"
+import Electric_detail from "./components/Electric_detail"
+import Login from "./components/Login"
+import { Register } from "./components/Register"
+import { Contact } from "./components/Contact"
 
 
 const App = () => {
@@ -24,7 +32,17 @@ const App = () => {
 <Bottomnav/>
 <ToastContainer/>
 <Routes>
+<Route path="/contact" element={<Contact/>}></Route>
+<Route path="/register" element={<Register/>}></Route>
+<Route path="/login" element={<Login/>}></Route>
+<Route path="/electric" element={<Electric/>}></Route>
+<Route path="/electric/:id" element={<Electric_detail/>}>
 
+<Route path="write" element={<Write_review/>}></Route>
+</Route>
+<Route path="/term" element={<Term/>}></Route>
+<Route path="/about" element={<About/>}></Route>
+<Route path="/privacy" element={<Privacy/>}></Route>
 <Route path="/Shirts" element={<Shirt/>}></Route>
 <Route path="/Shirts/:id" element={<Shirt_deatil/>}>
 

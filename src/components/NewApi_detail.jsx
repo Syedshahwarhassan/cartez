@@ -1,6 +1,7 @@
 import React from 'react'
 import { New } from '../api/new_api'
 import { useParams } from 'react-router-dom'
+import { Button } from './Button';
 
 const NewApi_detail = () => {
   const {id}=useParams();
@@ -46,7 +47,9 @@ const NewApi_detail = () => {
 <h3>Category:</h3>
 <h5>Name: {x.category.name}</h5>
 <img src={x.category.image} style={{height:"100px",width:"100px",border:"1px solid black",padding:"5px"}}/>
-  <p className='mt-5'><span style={{fontSize:"large",fontWeight:"bold"}}>Description:</span><br/>{x.description}</p>
+ <Button/>
+<p className='mt-5'><span style={{fontSize:"large",fontWeight:"bold"}}>Description:</span><br/>{x.description}</p>
+
 </div>
     </div>
   )
