@@ -39,6 +39,9 @@ const Bottomnav = () => {
         <li className="nav-item">
         <Link className="nav-link" to={"/contact"}>Contact</Link>
       </li>
+      <li className="nav-item">
+        <Link className="nav-link" to={"/upload"}>Upload</Link>
+      </li>
       </ul>
      <div className="nav-search text-center" onClick={()=>showSearchBar()} >
  <i className="fa-solid fa-magnifying-glass" />

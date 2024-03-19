@@ -22,6 +22,7 @@ import Electric_detail from "./components/Electric_detail"
 import Login from "./components/Login"
 import { Register } from "./components/Register"
 import { Contact } from "./components/Contact"
+import Upload from "./components/Upload"
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
 <Bottomnav/>
 <ToastContainer/>
 <Routes>
+<Route path="/upload" element={<Upload/>}></Route>
 <Route path="/contact" element={<Contact/>}></Route>
 <Route path="/register" element={<Register/>}></Route>
 <Route path="/login" element={<Login/>}></Route>
