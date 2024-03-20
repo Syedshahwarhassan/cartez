@@ -335,7 +335,7 @@ font-weight: 600;
   }
   
   .title {
-    text-align: center;
+    text-align: justify;
   }
   
   .contact-form {
@@ -410,9 +410,28 @@ font-weight: 600;
 .form-submit:hover {
     background-color: #8b8a38;
 }
-
-
-
+.quantity-div{
+    display: flex;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    width: 100px;
+    justify-content: space-evenly;
+    padding: 5px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.qty-btn{
+border: 0px;
+background-color: transparent;
+color: black;
+font-size: x-large;
+padding:5px 15px;
+}
+.qty-value{
+    text-align: center;
+    margin: auto;
+    font-size: large;
+}
 
 
 

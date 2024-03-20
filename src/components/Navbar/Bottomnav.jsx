@@ -29,11 +29,12 @@ const Bottomnav = () => {
             Collection
           </a>
           <ul className="dropdown-menu">
-            <li><Link className="dropdown-item" to={"/product"}>Men Kurta</Link></li>
-            <li><Link className="dropdown-item" to={"/Shirts"} >Men Shirt</Link></li>
+          <li><Link className="dropdown-item" to={"/all"}>All</Link></li>
+            <li><Link className="dropdown-item" to={"/electronics"}>Electronic</Link></li>
+            <li><Link className="dropdown-item" to={"/decor"} >Decor</Link></li>
             <li><hr className="dropdown-divider" /></li>
-            <li><Link className="dropdown-item" to={"/New"}>New Arrivals</Link></li>
-            <li><Link className="dropdown-item" to={"/electric"}>Electric</Link></li>
+            <li><Link className="dropdown-item" to={"/kitchen"}>Kitchen</Link></li>
+          
           </ul>
         </li>
         <li className="nav-item">

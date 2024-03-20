@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import '/src/App.css'
 export const Footer = () => {
   return (
 <div className="main-footer" >

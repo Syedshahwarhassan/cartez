@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 import Swal from 'sweetalert2'
-import Electric from './Electric';
 import Login from './Login';
 
 export const Button = () => {

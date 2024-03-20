@@ -1,25 +1,27 @@
 // import React from 'react'
 
+import Decor from "../Products/Decor"
+import Electronic from "../Products/Electronic"
+import Kitchen from "../Products/Kitchen"
 import Home_men from "./Home_men"
-import Home_women from "./Home_women"
+
 
 import Slider from "./Slider"
-import Featured_Product from "../Featured_Product"
-import { Shirt } from "../Shirt"
-import { NewApi } from "../NewApi"
+
+
 const Home = () => {
   return (
     <div>
       <Slider/>
       <div className="product-container">
-   <Featured_Product/>
+<Decor/>
    </div>
-
+<Kitchen/>
   <Home_men/>
   <div className="product-container">
-  <Shirt/>
+<Decor/>
    </div>
-<NewApi/>
+
  
     </div>
   )
