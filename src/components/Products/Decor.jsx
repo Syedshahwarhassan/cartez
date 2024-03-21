@@ -34,10 +34,10 @@ const Decor = () => {
               <div className="card-body">
                 <h5 className="card-title">{c.Title}...</h5>
                 <h6 className="card-title">{c.Category}...</h6>
-                <p style={{ color: "red" }}>
-                  <span style={{ color: "black" }}>Price :</span>
-                  {c.Price}$
-                </p>
+                  <p style={{ color: "red" }}>
+                    <span style={{ color: "black" }}>Price :</span>
+                    {c.Price}$ <s style={{color:"gray"}}>{c.CAP}</s>
+                  </p>
               </div>
             </div>
           );
