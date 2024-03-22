@@ -19,7 +19,7 @@ setData(dat)
         {Object.entries(data).map(([key, c]) => {
           return (
             <div key={key} className="mini-card" style={{ width: "13rem" }}>
-              <Link to={`/all/${c.id}`}>
+              <Link to={`/electronics/${c.id}`}>
                 <img
                   src={c.ImageUrl}
                   className="card-img-top"

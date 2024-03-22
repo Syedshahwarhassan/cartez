@@ -23,7 +23,7 @@ const Kitchen = () => {
         {Object.entries(product).map(([key, c]) => {
           return (
             <div key={key} className="mini-card" style={{ width: "13rem" }}>
-              <Link to={`/all/${c.id}`}>
+              <Link to={`/kitchen/${c.id}`}>
                 <img
                   src={c.ImageUrl}
                   className="card-img-top"

@@ -13,10 +13,11 @@ const Write_review = () => {
   const submit=()=>{
     const unique=Math.floor(Math.random()*100000)
 const db=getDatabase(app);
-set(ref(db,'product/' + id + '/review/'+unique),{
+set(ref(db,'all/' + id + '/review/'+unique),{
   Title:title,
   Review:review,
   User:user,
+  Reply:'',
   image:"https://firebasestorage.googleapis.com/v0/b/cartez-2c9d2.appspot.com/o/149071%20(1).png?alt=media&token=7384cedf-34c2-4a0f-b8f4-91a73441321c"
 })
 toast.success("Thanks for Review")

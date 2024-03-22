@@ -7,11 +7,11 @@ const All = () => {
   const [product, setProduct] = useState({});
   const db = getDatabase(app);
   useEffect(() => {
-    const Ref = ref(db, "product");
+    const Ref = ref(db, "all/");
     onValue(Ref, (snapshot) => {
       const data = snapshot.val();
 
-      console.log(data);
+      
       setProduct(data);
     });
   }, []);
@@ -22,7 +22,7 @@ const All = () => {
           {Object.entries(product).map(([key, c]) => {
             return (
               <div key={key} className="mini-card" style={{ width: "13rem" }}>
-                <Link to={`/all/${c.id}`}>
+                <Link to={`/product/${c.id}`}>
                   <img
                     src={c.ImageUrl}
                     className="card-img-top"

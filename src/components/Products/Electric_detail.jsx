@@ -1,27 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { Button } from "./Button";
-import { app } from "../components/Firebase";
+import {app} from '../Firebase'
 import { getDatabase, ref, onValue } from "firebase/database";
-import Review from "./review/Review";
-import Quantity from "./Quantity";
-import Review_output from "./review/Review_output";
-const All_detail = () => {
-  const { id } = useParams();
-  const [proid, setProid] = useState();
-  // let x=product.find((c)=>c.id==id);
-  useEffect(() => {
-    const db = getDatabase(app);
+import Review from "../review/Review";
+import Review_output from "../review/Review_output";
+import Quantity from "../Quantity";
+import { Button } from "../Button";
 
-    const Refer = ref(db, "all/" + id);
-    onValue(Refer, (snapshot) => {
-      const data = snapshot.val();
 
-      setProid(data);
-    });
-  }, []);
-
+const Electric_detail = () => {
+    const { id } = useParams();
+    const [proid, setProid] = useState();
+    // let x=product.find((c)=>c.id==id);
+    useEffect(() => {
+      const db = getDatabase(app);
+  
+      const Refer = ref(db, "Electronics/" + id);
+      onValue(Refer, (snapshot) => {
+        const data = snapshot.val();
+  
+        setProid(data);
+      });
+    }, []);
   return (
     <div>
       {proid && (
@@ -42,8 +43,8 @@ const All_detail = () => {
 {proid.Brand &&
 (<p>{proid.Brand}</p>)}
               <h5>Price : {proid.Price}$   <s style={{color:"red"}}>{proid.CAP}</s></h5>
-              <Quantity/>
-              <Button />
+            <Quantity/>
+             <Button/>
               <p>
                 Description: <br />
                 {proid.Description}
@@ -52,10 +53,10 @@ const All_detail = () => {
           </div>
         </div>
       )}
-      <Review />
-      <Review_output/>
+<Review/>
+<Review_output/>
     </div>
-  );
-};
+  )
+}
 
-export default All_detail;
+export default Electric_detail

@@ -1,16 +1,35 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import {getAuth,createUserWithEmailAndPassword} from 'firebase/auth'
+import { getDatabase,ref,set } from 'firebase/database';
+import { app } from './Firebase'; 
+import { toast } from 'react-toastify';
 export const Register = () => {
-    function error(e){
-        Swal.fire({
-          title:"Network Problem",
-          text:"Please try again after few minutes",
-          timer:4000,
-          icon:"error"
-        }
-        )
-        }
+  const auth=getAuth(app)
+  const navi=useNavigate();
+  const [email,setEmail]=useState();
+  const [password,setPassword]=useState();
+  const [user,setUser]=useState();
+  const db=getDatabase(app)
+  const id=(Math.floor(Math.random()*1000000))
+  const sign=()=>{
+    createUserWithEmailAndPassword(auth,email,password).then(res=>{
+set(ref(db,'user/' + id),{
+  Name:user,
+  Email:email,
+  password:password,
+  Id:id
+})
+toast.success('Login Success')
+
+navi('/login')
+    }).catch(err=>{
+      console.log(err)
+      toast.error("Not successful")
+    })
+    }
+
+
         function stop(e){
           e.preventDefault();
         }
@@ -23,10 +42,10 @@ export const Register = () => {
     </div>
     <div className='login-body'>
     <form onSubmit={stop}>
-    <input type='text' placeholder='Enter Your Name'/><br/>
-<input type='email' placeholder='Enter Your Email'/><br/>
-<input type='password' placeholder='Enter Your Password'/><br/>
-<button className='login-btn' onClick={()=>error()}>Sign in </button>
+    <input type='text' onChange={(e)=>setUser(e.target.value)} placeholder='Enter Your Name'/><br/>
+<input type='email' onChange={(e)=>setEmail(e.target.value)} placeholder='Enter Your Email'/><br/>
+<input type='password' onChange={(e)=>setPassword(e.target.value)} placeholder='Enter Your Password'/><br/>
+<button className='login-btn' onClick={()=>sign()}>Sign in </button>
 <p>Already have a account? <Link style={{textDecoration:"none"}} to={'/login'}><span >Login here?</span></Link></p>
 </form>
     </div>

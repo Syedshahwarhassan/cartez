@@ -10,7 +10,7 @@ console.log(id)
 const [preview,setPreview]=useState();
 useEffect(()=>{
 const db=getDatabase(app)
-const REf=ref(db,'/product/'+ id +'/review/')
+const REf=ref(db,'/all/'+ id +'/review/')
 onValue(REf,(snapshot)=>{
 const data=snapshot.val();
 setPreview(data);

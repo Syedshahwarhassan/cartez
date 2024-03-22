@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { getDatabase,set,ref } from 'firebase/database';
 import {app} from './Firebase'
 import { toast } from 'react-toastify';
+import '../App.css'
 export const Contact = () => {
   const [name,setName]=useState();
   const [email,setEmail]=useState();
@@ -12,7 +13,8 @@ function sendinfo(){
   set(ref(db,'contact/'+ id),{
     Name:name,
     Email:email,
-    Msg:msg
+    Msg:msg,
+    image:"https://firebasestorage.googleapis.com/v0/b/cartez-2c9d2.appspot.com/o/149071%20(1).png?alt=media&token=7384cedf-34c2-4a0f-b8f4-91a73441321c"
   })
   toast.info('Thanks For Contacting')
 }
